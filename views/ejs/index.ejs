@@ -6,7 +6,7 @@
     <!-- Navbar -->
     <div class="visible">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="progress">
+        <div class="progress w-100" style="height: 1px;">
           <div id="loadprogress" class="progress-bar bg-primary d-none" style="width: 0%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Text</div>
         </div>
         <div class="container">
@@ -372,11 +372,11 @@
     <script>
       var $loadProgress = document.getElementById('loadprogress');
       function goTo(page, title, url) {
-          if ("undefined" !== typeof history.pushState) {
-              history.pushState({page: page}, title, url);
-          } else {
-              window.location.assign(url);
-          }
+        if ("undefined" !== typeof history.pushState) {
+          history.pushState({page: page}, title, url);
+        } else {
+          window.location.assign(url);
+        }
       }
       window.addEventListener('load', async () => {
           var $nodeList, $index;
@@ -402,7 +402,10 @@
                       $loadProgress.classList.remove('d-none');
                       $loadProgress.classList.add('d-block');
                       $loadProgress.style.width = "50%";
-                      console.log(`${$href} was clicked`)
+                      console.log(`${$href} was clicked`);
+                      $(document).load($href, () => {
+                        console.log('Loaded document')
+                      })
                   })
                   $a.removeAttribute("href");
               }
