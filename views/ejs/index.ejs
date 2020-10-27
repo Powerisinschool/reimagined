@@ -368,5 +368,49 @@
         console.log('👍', 'appinstalled', event);
       });
     </script>
+    
+    <script>
+      var $loadProgress = document.getElementById('loadprogress');
+      function goTo(page, title, url) {
+          if ("undefined" !== typeof history.pushState) {
+              history.pushState({page: page}, title, url);
+          } else {
+              window.location.assign(url);
+          }
+      }
+      window.addEventListener('load', async () => {
+          var $nodeList, $index;
+
+          $nodeList = document.getElementsByTagName('a');
+
+          $index = 0;
+          backgroundListener();
+
+          function backgroundListener() {
+              var $a, $href;
+              if ($index >= $nodeList.length) {
+                  return;
+              }
+
+              $a = $nodeList[$index];
+
+              $href = $a.getAttribute("href");
+              if ($href) {
+                  $a.addEventListener('click', (event) => {
+                      event.preventDefault;
+                      goTo("Login", $href, $href);
+                      $loadProgress.classList.remove('d-none');
+                      $loadProgress.classList.add('d-block');
+                      $loadProgress.style.width = "50%";
+                      console.log(`${$href} was clicked`)
+                  })
+                  $a.removeAttribute("href");
+              }
+              
+              ++$index;
+              window.setTimeout(backgroundListener, 200);
+          }
+      })
+    </script>
   </body>
 </html>
