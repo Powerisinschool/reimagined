@@ -401,10 +401,12 @@
                       event.preventDefault;
                       goTo("Login", $href, $href);
                       $loadContainer.classList.remove('d-none');
-                      $loadProgress.style.width = "50%";
-                      console.log(`${$href} was clicked`);
-                      $(document).load($href, () => {
-                        console.log('Loaded document')
+                      setTimeout(()=>{
+                        $loadProgress.style.width = "50%";
+                        console.log(`${$href} was clicked`);
+                        $(document).load($href, () => {
+                          console.log('Loaded document')
+                        }, 1000)
                       })
                   })
                   $a.removeAttribute("href");
