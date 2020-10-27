@@ -404,9 +404,15 @@
                       setTimeout(()=>{
                         $loadProgress.style.width = "50%";
                         console.log(`${$href} was clicked`);
-                        $(document).load($href, () => {
-                          console.log('Loaded document')
-                        }, 1000)
+                        var xhr = new XMLHttpRequest();
+                        xhr.onload = function () {
+                          document.open('text/html');
+                          document.write(this.response);
+                          document.close();
+                          console.log('Loaded document');
+                        };
+                        xhr.open('GET', $href, true);
+                        xhr.send();
                       })
                   })
                   $a.removeAttribute("href");
