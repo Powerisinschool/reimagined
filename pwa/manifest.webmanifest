@@ -1,0 +1,31 @@
+{
+    "short_name": "T-Messenger",
+    "name": "T-Messenger: Still in development mode!",
+    "description": "Chat freely",
+    "icons": [
+      {
+        "src": "/img/icon-192.webp",
+        "type": "image/webp",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/img/icon-512.webp",
+        "type": "image/webp",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#E0E0E0",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#2F2FA2",
+    "shortcuts": [
+      {
+        "name": "Chat?",
+        "short_name": "C",
+        "description": "Chat up someone",
+        "url": "/messages?source=pwa",
+        "icons": [{ "src": "/img/icon-192.webp", "sizes": "192x192" }]
+      }
+    ]
+}

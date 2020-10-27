@@ -1,0 +1,107 @@
+<!-- Chat: Header -->
+<div class="chat-header border-bottom py-4 py-lg-6 px-lg-8">
+    <div class="container-xxl">
+
+        <div class="row align-items-center">
+
+            <!-- Close chat(mobile) -->
+            <div class="col-3 d-xl-none">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                        <a class="text-muted px-0" href="#" data-chat="open">
+                            <i class="icon-md fe-chevron-left"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Chat photo -->
+            <div class="col-6 col-xl-6">
+                <div class="media text-center text-xl-left">
+                    <div class="avatar avatar-sm avatar-online d-none d-lg-inline-block mr-5" id="reconlinein">
+                        <img src="/asset/images/avatars/10.jpg" class="avatar-img" alt="">
+                    </div>
+
+                    <div class="media-body align-self-center text-truncate">
+                        <h6 class="mb-n1" id="recnames"><%= `${userfirstname} ${userlastname}` %></h6>
+                        <span class="badge badge-dot badge-success d-inline-block d-xl-none mr-1" id="onlinedot"></span>
+                        <small class="text-muted" id="onlinetext"></small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat toolbar -->
+            <div class="col-3 col-xl-6 text-right">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item list-inline-item d-none d-xl-block mr-3">
+                        <a class="nav-link text-muted px-3" data-toggle="collapse" data-target="#chat-2-search" href="#" title="Search this chat">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="icon-md bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item list-inline-item d-none d-xl-block mr-3">
+                        <a class="nav-link text-muted px-3" href="#" data-chat-sidebar-toggle="#chat-1-members" title="Add People">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="icon-md bi bi-person-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10zM13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item list-inline-item d-none d-xl-block mr-0">
+                        <a class="nav-link text-muted px-3" href="#" data-chat-sidebar-toggle="#chat-2-info" title="Details">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="icon-md bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <!-- Mobile nav -->
+                    <li class="nav-item list-inline-item d-block d-xl-none">
+                        <div class="dropdown">
+                            <a class="nav-link text-muted px-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="icon-md bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item d-flex align-items-center" data-toggle="collapse" data-target="#chat-2-search" href="#">
+                                    Search <svg width="1em" height="1em" viewBox="0 0 16 16" class="ml-auto pl-5 bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                            </svg>
+                                </a>
+
+                                <a class="dropdown-item d-flex align-items-center" href="#" data-chat-sidebar-toggle="#chat-2-info">
+                                    Chat Info <span class="ml-auto pl-5 fe-more-horizontal"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Mobile nav -->
+                </ul>
+            </div>
+
+        </div><!-- .row -->
+
+    </div>
+</div>
+<!-- Chat: Header -->
+
+<!-- Chat: Search -->
+<div class="collapse border-bottom px-lg-8" id="chat-2-search">
+    <div class="container-xxl py-4 py-lg-6">
+
+        <div class="input-group">
+            <input type="text" class="form-control form-control-lg" placeholder="Search this chat" aria-label="Search this chat">
+
+            <div class="input-group-append">
+                <button class="btn btn-lg btn-ico btn-secondary btn-minimal" type="submit">
+                    <i class="fe-search"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Chat: Search -->

@@ -1,0 +1,99 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Drive</title>
+    <!-- Stylesheets -->
+    <!--<link rel="stylesheet" href="/css/bootstrap.min.css"/>-->
+
+    <!-- Connect page and delivery network at the same time -->
+    <link rel="preconnect" href="https://ressafru.sirv.com">
+    <link rel="dns-prefetch" href="https://ressafru.sirv.com">
+    
+    <link rel="stylesheet" disabled href="/js/vue-popper.css">
+
+    <!-- Manifest Files -->
+    <link rel="manifest" href="/manifest.webmanifest">
+
+    <!-- Prioritize this: Tolu says Critical to load time -->
+    <link rel="preload" as="style" href="https://ressafru.sirv.com/uploadol/css/style.min.css">
+
+    <!-- Fetch these for super Loading time on request -->
+    <link rel="prefetch" as="document" href="/login">
+    <link rel="prefetch" as="document" href="/signup">
+    <link rel="prefetch" as="script" href="/js/ajax.js">
+
+    <link rel="stylesheet" href="https://ressafru.sirv.com/uploadol/css/style.min.css">
+
+    <style>
+        .content-see {
+            visibility: hidden;
+        }
+        .login-title {
+            /*font-family: Poppins-Regular;*/
+            font-size: 20px;
+            color: #555555;
+            line-height: 1.2;
+            letter-spacing: 2px;
+        }
+        input.input100 {
+            height: 55px;
+        }
+        .input100 {
+            display: block;
+            border: none;
+            width: 100%;
+            background: transparent;
+            font-family: Poppins-Regular;
+            font-size: 18px;
+            color: #666666;
+            line-height: 1.2;
+            padding: 0 25px;
+        }
+    </style>
+
+    <!-- Javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/vue-popper.js"></script>
+    <script defer language="javascript" src="/js/bootstrap.min.js"></script>
+    <!--<script async>
+        function pageLoad() {
+            var $imgList = document.body.getElementsByClassName('img-speed');
+            // Kick-start the process
+            var $i = 0;
+            backgroundLoader();
+
+            function backgroundLoader() {
+                var $img, $src;
+                if ($i >= $imgList.length) {
+                    // we're done
+                    return;
+                }
+
+                // Get this image
+                $img = $imgList[$i];
+
+                $src = $img.getAttribute('data-src');
+                if ($src) {
+                    // It's one of our special ones
+                    $img.src = $src;
+                    $img.removeAttribute('data-src');
+                }
+
+                // Schedule the next one
+                ++$i;
+                window.setTimeout(backgroundLoader, 200);
+            }
+        }
+        window.onload = pageLoad;
+    </script>-->
+    <script async>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener('load', async () => {
+            navigator.serviceWorker.register('/service-worker.js');
+          });
+        }
+    </script>
+    <script src="/js/lazysizes.min.js" async></script>
+</head>

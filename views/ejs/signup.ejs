@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../include/head'); -%>
+  <body>
+    <%- include('../include/preload'); -%>
+    <div class="content-see d-block container h-100 row">
+      <form class="col-sm-12 my-auto needs-validation form-register" name="signupform" id="registerform" action="/auth/signup" method="POST" novalidate>
+        <h1 class="h3 mb-3 font-weight-normal">Please Sign Up</h1>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom01">First name</label>
+            <input type="text" name="firstname" class="form-control" id="validationDefaultFirstname" placeholder="First name" onkeyup="validateFirstname();" onkeypress="validateFirstname();" required prediction="NAME_FIRST">
+            <div class="invalid-feedback" id="firstnameerror">
+              Please provide a Firstname.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom02">Last name</label>
+            <input type="text" name="lastname" class="form-control" id="validationDefaultLastname" placeholder="Last name" onkeyup="validateLastname();" onkeypress="validateLastname();" required prediction="NAME_LAST">
+            <div class="invalid-feedback" id="lastnameerror">
+              Please provide a Lastname.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationCustomUsername">Username</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+              </div>
+              <input type="text" name="username" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback" id="usernameerror">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+        </div>
+          <!--<div class="col-md-6 mb-3">
+            <label for="validationDefault01">First name:</label>
+            <input type="text" name="firstname" class="form-control" id="validationDefaultFirstname" placeholder="Mark" value="" onkeyup="validateFirstname();" onkeypress="validateFirstname();" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault02">Last name:</label>
+            <input type="text" name="lastname" class="form-control" id="validationDefaultLastname" placeholder="Otto" value="" onkeyup="validateLastname();" onkeypress="validateLastname();" required>
+          </div>
+        <div class="col-md-6 mb-3">
+          <div class="error">
+            <span class="error" id="firstnameerror"></span>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="error">
+            <span class="error" id="lastnameerror"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="validationDefaultUsername">Username (Case Insensitive):</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupPrepend2"><svg class="bi" width="32" height="32" fill="currentColor"><use xlink:href="/bi#at"/></svg></span>
+            </div>
+            <input type="text" name="username" class="form-control" id="validationDefaultUsername" placeholder="superuser" aria-describedby="inputGroupPrepend2" onkeyup="validateUsername();" onkeypress="validateUsername();" required>
+          </div>
+        </div>-->
+        <!--<div class="error">
+          <span class="error" id="usernameerror"></span>
+        </div>-->
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Email</label>
+            <input type="email" name="email" class="form-control" id="inputEmail4" required>
+            <div class="invalid-feedback" id="emailerror">
+              Please provide a valid Email.
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputPassword4">Password</label>
+            <input type="password" name="password" class="form-control" id="validationDefaultPassword" required>
+            <small id="passwordHelpBlock" class="form-text text-muted">
+              Your password must be 8-20 characters long and must not contain emojis.
+            </small>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputPassword4">Confirm Password</label>
+            <input type="password" class="form-control" id="validationDefaultPasswordConfirm" required>
+          </div>
+        </div>
+        <!--<div class="form-row">
+          <label for="validationDefaultPassword">Password:</label>
+          <div class="input-group">
+            <input type="password" name="password" class="form-control" id="validationDefaultPassword" placeholder="Password" aria-describedby="inputGroupPrepend2" onkeyup="validatePassword();" onkeypress="validatePassword();" required>
+          </div>
+        </div>
+        <small id="passwordHelpBlock" class="form-text text-muted">
+          Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+        </small>
+        <div class="error">
+          <span class="error" id="passworderror"></span>
+        </div>
+        <div class="form-row">
+          <label for="validationDefaultPasswordConfirm">Confirm Password:</label>
+          <div class="input-group">
+            <input type="password" class="form-control" id="validationDefaultPasswordConfirm" placeholder="Password" aria-describedby="inputGroupPrepend2" onkeyup="validatePassword();" onkeypress="validatePassword();" required>
+          </div>
+        </div>
+        <div class="error">
+          <span class="error" id="passworderror"></span>
+        </div>-->
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-lg btn-block" id="signupbtn" type="submit">Sign Up</button>
+        <p>Or would you rather <a href="/login">Login</a>?</p>
+        <p class="mt-5 mb-3 text-muted text-center">&copy; 2020</p>
+      </form>
+    </div>
+
+    <!-- JS Section -->
+    <script src="/js/ajax.js"></script>
+    <script>
+      var firstnamewell = false;
+      var lastnamewell = false;
+      var usernamewell = false;
+      var emailwell = false;
+      var passwordwell = false;
+
+      const validateFirstname = function() {
+        if ($.trim( $('#validationDefaultFirstname').val() ) == '') {
+          firstnamewell = false;
+        } else {
+          $('#firstnameerror').html('');
+          firstnamewell = true;
+        }
+        checkgo();
+      }
+
+      const validateLastname = function() {
+        if ($.trim( $('#validationDefaultLastname').val() ) == '') {
+          lastnamewell = false;
+        } else {
+          $('#lastnameerror').html('');
+          lastnamewell = true;
+        }
+        checkgo();
+      }
+      const setInputValue = (input, set) => {
+        input.val(set);
+      }
+
+      const lower = (value) => {
+        return value.toLowerCase();
+      }
+
+      const validateUsername = function() {
+        var usernamer = $('#validationDefaultUsername');
+        var usernameValue = usernamer.val();
+        var regex = /^[A-Za-z0-9_.*]+$/
+        //Validate TextBox value against the Regex.
+        var isValid = regex.test(username.val());
+        //username.val(usernameValue.toLowerCase());
+        setInputValue(usernamer, lower(usernameValue));
+        if (!isValid) {
+          $('#usernameerror').html('Please no symbols or spaces!');
+          usernamer.setCustomValidity("Invalid field.");
+          $scope.signupform.username.$setValidity(errorKey, isValid)
+          usernamewell = false;
+        } else if ($.trim( usernameValue ) == '') {
+          $('#usernameerror').html('Please choose a username.');
+          $('#validationDefaultUsername').setCustomValidity("Invalid field.");
+          usernamewell = false;
+        } else {
+          $('#usernameerror').html('');
+          $('#validationDefaultUsername').setCustomValidity("");
+          usernamewell = true;
+        }
+        checkgo();
+      }
+      const validateEmail = function() {
+        if ($.trim( $('#validationDefaultEmail').val() ) == '') {
+          emailwell = false;
+        } else {
+          $('#emailerror').html('');
+          emailwell = true;
+        }
+        checkgo();
+      }
+
+      const validatePassword = function() {
+        if ($.trim( $('#validationDefaultPassword').val() ) == '') {
+          $('#passworderror').html('');
+          passwordwell = false;
+        } else if ($('#validationDefaultPassword').val() !== $('#validationDefaultPasswordConfirm').val()) {
+          $('#passworderror').html('Passwords are not the same');
+          passwordwell = false;
+        } else {
+          $('#passworderror').html('');
+          passwordwell = true;
+        }
+        checkgo();
+      }
+
+      const checkgo = function() {
+        if (firstnamewell && lastnamewell && usernamewell && emailwell && passwordwell) {
+          $('#signupbtn').removeAttr('disabled');
+        } else {
+          console.log(`First Name Boolean Value: ${firstnamewell}`);
+          console.log(`Last Name Boolean Value: ${lastnamewell}`);
+          console.log(`Username Boolean Value: ${usernamewell}`);
+          console.log(`Email Boolean Value: ${emailwell}`);
+          console.log(`Password Boolean Value: ${passwordwell}`);
+          signupwrong();
+        }
+      }
+
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              } else {
+                register(event);
+                //signup(event);
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+    <link rel="stylesheet" href="/css/style.min.css">
+  </body>
+</html>

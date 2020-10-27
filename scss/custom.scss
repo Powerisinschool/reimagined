@@ -1,0 +1,34 @@
+$theme-colors: (
+  "primary": #2f2fa2,
+  "danger": #ff4136,
+  "mine": #7f808c,
+  "dark-mode": #0e0e0e
+);
+
+$spacer: 1rem;
+$spacers: (
+  6: ($spacer * 1.25),
+  7: ($spacer * 1.5)
+);
+
+$mine: #7f808c;
+
+.avatar-lg, .avatar-lg>svg, .avatar-lg>img {
+    height: 4rem;
+    min-height: 4rem;
+    width: 4rem;
+    min-width: 4rem;
+}
+
+.avatar-xl, .avatar-xl>svg, .avatar-xl>img {
+    height: 5.75rem;
+    min-height: 5.75rem;
+    width: 5.75rem;
+    min-width: 5.75rem;
+}
+
+$body-color: #7f808c;
+
+$nav-link-active-color: #ff2052;
+
+@import "node_modules/bootstrap/scss/bootstrap";

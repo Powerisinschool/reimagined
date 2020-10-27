@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
+        <title>Messenger - Responsive Bootstrap Application</title>
+        <!-- Template core CSS -->
+        <link href="/css/template.min.css" rel="stylesheet">
+        <style>
+            .content-see {
+                display: none;
+            }
+        </style>
+        <link href="/css/template.dark.min.css" rel="stylesheet" media="(prefers-color-scheme: dark)">
+        <link rel="stylesheet" href="/js/vue-popper.css">
+    </head>
+    <body>
+        <%- include('../../include/preload'); -%>
+        <div class="content-see d-block layout">
+            <!-- Nav and sidebar -->
+            <%- include('../elements.ejs'); -%>
+            <!-- Nav and sidebar -->
+
+            <% if(userExists) { %>
+            <!-- Main Content -->
+            <div class="main main-visible" data-mobile-height="">
+
+                <!-- Chat -->
+                <div id="chat-2" class="chat dropzone-form-js" data-dz-url="some.php">
+
+                    <!-- Chat: body -->
+                    <div class="chat-body">
+
+                        <%- include('./chat-header.ejs'); %>
+
+                        <div class="chat-content px-lg-8">
+                            <div class="container-xxl py-6 py-lg-10" id="chatcon">
+                                Nothing here...
+                            </div>
+                            <!-- Scroll to end -->
+                            <div class="end-of-chat"></div>
+                        </div>
+
+                        <!-- Chat: DropzoneJS container -->
+                        <div class="chat-files hide-scrollbar px-lg-8">
+                            <div class="container-xxl">
+                                <div class="dropzone-previews-js form-row py-4"></div>
+                            </div>
+                        </div>
+                        <!-- Chat: DropzoneJS container -->
+
+                        <!-- Chat: Footer -->
+                        <%- include('./chat-footer.ejs'); %>
+                        <!-- Chat: Footer -->
+                    </div>
+                    <!-- Chat: body -->
+                    <!-- Chat Details -->
+                    <%- include('./chat-details.ejs'); %>
+                    <!-- Chat Details -->
+                </div>
+                <!-- Chat -->
+            </div>
+            <!-- Main Content -->
+            <% } else { %>
+            <div class="jumbotron main main-visible">
+                <p class="text-center">No User like this</p>
+            </div>
+            <% } %>
+        </div>
+        <!-- Layout -->
+        <!-- DropzoneJS: Template -->
+        <!-- DropzoneJS: Template -->
+        <!-- Modal: Invite friends -->
+        <%- include('./chat-invite.ejs'); %>
+        <!-- Modal: Invite friends -->
+        <!-- Error Modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Serious Error</h5>
+                </div>
+                <div class="modal-body" id="modalBody">
+                  Serious Error
+                </div>
+                <div class="modal-footer">
+                  <button type="button" onclick="window.location.href=''" class="btn btn-primary">Reload</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Error Modal -->
+
+        <!-- Scripts -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/ajax.js"></script>
+        <!--<script type="text/javascript" src="/js/popper.js"></script>
+        <script type="text/javascript" src="/js/vue.js"></script>-->
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="/js/vue-popper.min.js"></script>
+        <script language="javascript" src="/js/bootstrap.min.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/plugins.bundle.js"></script>
+        <script src="/js/messenger.js"></script>
+        <script src="/js/chat.js"></script>
+        <script src="/momentjs"></script>
+        <script>
+            //var socket = io();
+        </script>
+        <script>
+            (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        } else {
+                            sendMessage();
+                            //signup(event);
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+                }, false);
+            })();
+            /*$('#chat-id-1-input').keypress(function(event) {
+                // Auto-focus the current input when a key is typed
+                if (!(event.ctrlKey || event.metaKey || event.altKey)) {
+                    currentInput.focus();
+                }
+                // When the client hits ENTER on their keyboard
+                if (event.which === 13) {
+                    event.preventDefault();
+                    sendMessage();
+                    socket.emit('stop typing');
+                    typing = false;
+                }
+            });*/
+            //sendbtn.on("click", sendMsg(event))
+        </script>
+        <!-- Scripts -->
+        <input type="file" multiple="multiple" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;">
+        <link rel="stylesheet" href="style.min.css"/>
+    </body>
+</html>

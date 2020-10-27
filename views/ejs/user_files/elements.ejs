@@ -1,0 +1,1164 @@
+<!-- Navbar -->
+<div class="navigation navbar navbar-light justify-content-center py-xl-7">
+
+    <!-- Brand -->
+    <a href="#" class="d-none d-xl-block mb-6">
+        <!--<img src="/icons/cloud-fill.svg" class="mx-auto fill-primary" data-inject-svg="" alt="" style="height: 46px;">-->
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cloud-fill mx-auto fill-primary" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"/>
+        </svg>
+    </a>
+
+    <!-- Menu -->
+    <ul class="nav navbar-nav flex-row flex-xl-column flex-grow-1 justify-content-between justify-content-xl-center py-3 py-lg-0" role="tablist">
+
+        <!-- Invisible item to center nav vertically -->
+        <li class="nav-item d-none d-xl-block invisible flex-xl-grow-1">
+            <a class="nav-link position-relative p-0 py-xl-3" href="#" title="">
+                <i class="icon-lg fe-x"></i>
+            </a>
+        </li>
+
+        <!-- Create group -->
+        <li class="nav-item">
+            <a class="nav-link position-relative p-0 py-xl-3" data-toggle="tab" href="#tab-content-create-chat" title="Create chat" role="tab">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="icon-lg bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                </svg>
+            </a>
+        </li>
+
+        <!-- Friend -->
+        <li class="nav-item mt-xl-9">
+            <a class="nav-link position-relative p-0 py-xl-3" data-toggle="tab" href="#tab-content-friends" title="Friends" role="tab">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="icon-lg bi bi-people" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1h7.956a.274.274 0 0 0 .014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C13.688 10.629 12.718 10 11 10c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 0 0 .022.004zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10c-1.668.02-2.615.64-3.16 1.276C1.163 11.97 1 12.739 1 13h3c0-1.045.323-2.086.92-3zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                </svg>
+            </a>
+        </li>
+
+        <!-- Chats -->
+        <li class="nav-item mt-xl-9">
+            <a class="nav-link position-relative p-0 py-xl-3 active" data-toggle="tab" href="#tab-content-dialogs" title="Chats" role="tab">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-left-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v11.586l2-2A2 2 0 0 1 4.414 11H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                    <path fill-rule="evenodd" d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <div class="badge badge-dot badge-primary badge-bottom-center"></div>
+            </a>
+        </li>
+
+        <!-- Profile -->
+        <li class="nav-item mt-xl-9">
+            <a class="nav-link position-relative p-0 py-xl-3" data-toggle="tab" href="#tab-content-user" title="User" role="tab">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                </svg>
+            </a>
+        </li>
+
+        <!-- Demo only: Documentation -->
+        <li class="nav-item mt-xl-9 d-none d-xl-block flex-xl-grow-1">
+            <a class="nav-link position-relative p-0 py-xl-3" data-toggle="tab" href="#tab-content-demos" title="Demos" role="tab">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-layers" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3.188 8L.264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l-1.063.567L14.438 10 8 13.433 1.562 10 4.25 8.567 3.187 8z"/>
+                    <path fill-rule="evenodd" d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882l7.5-4zM1.563 6L8 9.433 14.438 6 8 2.567 1.562 6z"/>
+                </svg>
+            </a>
+        </li>
+
+        <!-- Settings -->
+        <li class="nav-item mt-xl-9">
+            <a class="nav-link position-relative p-0 py-xl-3" href="/settings" title="Settings">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-sliders" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+                </svg>
+            </a>
+        </li>
+
+    </ul>
+    <!-- Menu -->
+
+</div>
+<!-- Navbar -->
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="tab-content h-100" role="tablist">
+        <div class="tab-pane fade h-100" id="tab-content-create-chat" role="tabpanel">
+            <div class="d-flex flex-column h-100">
+
+                <div class="hide-scrollbar">
+                    <div class="container-fluid py-6">
+
+                        <!-- Title -->
+                        <h2 class="font-bold mb-6">Create group</h2>
+                        <!-- Title -->
+
+                        <!-- Search -->
+                        <%- include('./search.ejs'); -%>
+                        <!-- Search -->
+
+                        <!-- Tabs -->
+                        <ul class="nav nav-tabs nav-justified mb-6" role="tablist">
+                            <li class="nav-item">
+                                <a href="#create-group-details" class="nav-link active" data-toggle="tab" role="tab" aria-selected="true">Details</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#create-group-members" class="nav-link" data-toggle="tab" role="tab" aria-selected="false">Members</a>
+                            </li>
+                        </ul>
+                        <!-- Tabs -->
+
+                        <!-- Create chat -->
+                        <div class="tab-content" role="tablist">
+
+                            <!-- Chat details -->
+                            <div id="create-group-details" class="tab-pane fade show active" role="tabpanel">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <label class="small">Photo</label>
+                                        <div class="position-relative text-center bg-secondary rounded p-6">
+                                            <div class="avatar bg-primary text-white mb-5">
+                                                <i class="icon-md fe-image"></i>
+                                            </div>
+
+                                            <p class="small text-muted mb-0">You can upload jpg, gif or png files. <br> Max file size 3mb.</p>
+                                            <input id="upload-chat-photo" class="d-none" type="file">
+                                            <label class="stretched-label mb-0" for="upload-chat-photo"></label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="small" for="new-chat-title">Name</label>
+                                        <input class="form-control form-control-lg" name="new-chat-title" id="new-chat-title" type="text" placeholder="Group Name">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="small" for="new-chat-topic">Topic (optional)</label>
+                                        <input class="form-control form-control-lg" name="new-chat-topic" id="new-chat-topic" type="text" placeholder="Group Topic">
+                                    </div>
+
+                                    <div class="form-group mb-0">
+                                        <label class="small" for="new-chat-description">Description</label>
+                                        <textarea class="form-control form-control-lg" name="new-chat-description" id="new-chat-description" rows="6" placeholder="Group Description"></textarea>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <!-- Chat details -->
+
+                            <!-- Chat Members -->
+                            <div id="create-group-members" class="tab-pane fade" role="tabpanel">
+                                <nav class="list-group list-group-flush mb-n6">
+
+                                    <div class="mb-6">
+                                        <small class="text-uppercase">A</small>
+                                    </div>
+
+                                    <!-- Friend -->
+                                    <div class="card mb-6">
+                                        <div class="card-body">
+
+                                            <div class="media">
+                                                
+                                                <div class="avatar avatar-online mr-5">
+                                                    <img class="avatar-img" src="/asset/images/avatars/10.jpg" alt="Anna Bridges">
+                                                </div>
+                                                
+                                                
+
+                                                <div class="media-body align-self-center mr-6">
+                                                    <h6 class="mb-0">Anna Bridges</h6>
+                                                    <small class="text-muted">Online</small>
+                                                </div>
+
+                                                <div class="align-self-center ml-auto">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" id="id-user-1" type="checkbox">
+                                                        <label class="custom-control-label" for="id-user-1"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Label -->
+                                        <label class="stretched-label" for="id-user-1"></label>
+                                    </div>
+                                    <!-- Friend -->
+
+                                    <div class="mb-6">
+                                        <small class="text-uppercase">B</small>
+                                    </div>
+
+                                    <!-- Friend -->
+                                    <div class="card mb-6">
+                                        <div class="card-body">
+
+                                            <div class="media">
+                                                
+                                                
+                                                <div class="avatar mr-5">
+                                                    <img class="avatar-img" src="/asset/images/avatars/6.jpg" alt="Brian Dawson">
+                                                </div>
+                                                
+
+                                                <div class="media-body align-self-center mr-6">
+                                                    <h6 class="mb-0">Brian Dawson</h6>
+                                                    <small class="text-muted">last seen 2 hours ago</small>
+                                                </div>
+
+                                                <div class="align-self-center ml-auto">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" id="id-user-2" type="checkbox">
+                                                        <label class="custom-control-label" for="id-user-2"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Label -->
+                                        <label class="stretched-label" for="id-user-2"></label>
+                                    </div>
+                                    <!-- Friend -->
+
+                                    <div class="mb-6">
+                                        <small class="text-uppercase">L</small>
+                                    </div>
+
+                                    <!-- Friend -->
+                                    <div class="card mb-6">
+                                        <div class="card-body">
+
+                                            <div class="media">
+                                                
+                                                
+                                                <div class="avatar mr-5">
+                                                    <img class="avatar-img" src="/asset/images/avatars/5.jpg" alt="Leslie Sutton">
+                                                </div>
+                                                
+
+                                                <div class="media-body align-self-center mr-6">
+                                                    <h6 class="mb-0">Leslie Sutton</h6>
+                                                    <small class="text-muted">last seen 3 days ago</small>
+                                                </div>
+
+                                                <div class="align-self-center ml-auto">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" id="id-user-3" type="checkbox">
+                                                        <label class="custom-control-label" for="id-user-3"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Label -->
+                                        <label class="stretched-label" for="id-user-3"></label>
+                                    </div>
+                                    <!-- Friend -->
+
+                                    <div class="mb-6">
+                                        <small class="text-uppercase">M</small>
+                                    </div>
+
+                                    <!-- Friend -->
+                                    <div class="card mb-6">
+                                        <div class="card-body">
+
+                                            <div class="media">
+                                                
+                                                
+                                                <div class="avatar mr-5">
+                                                    <img class="avatar-img" src="/asset/images/avatars/4.jpg" alt="Matthew Wiggins">
+                                                </div>
+                                                
+
+                                                <div class="media-body align-self-center mr-6">
+                                                    <h6 class="mb-0">Matthew Wiggins</h6>
+                                                    <small class="text-muted">last seen 3 days ago</small>
+                                                </div>
+
+                                                <div class="align-self-center ml-auto">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" id="id-user-4" type="checkbox">
+                                                        <label class="custom-control-label" for="id-user-4"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Label -->
+                                        <label class="stretched-label" for="id-user-4"></label>
+                                    </div>
+                                    <!-- Friend -->
+
+                                    <div class="mb-6">
+                                        <small class="text-uppercase">S</small>
+                                    </div>
+
+                                    <!-- Friend -->
+                                    <div class="card mb-6">
+                                        <div class="card-body">
+
+                                            <div class="media">
+                                                
+                                                
+                                                <div class="avatar mr-5">
+                                                    <img class="avatar-img" src="/asset/images/avatars/7.jpg" alt="Simon Hensley">
+                                                </div>
+                                                
+
+                                                <div class="media-body align-self-center mr-6">
+                                                    <h6 class="mb-0">Simon Hensley</h6>
+                                                    <small class="text-muted">last seen 3 days ago</small>
+                                                </div>
+
+                                                <div class="align-self-center ml-auto">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" id="id-user-5" type="checkbox">
+                                                        <label class="custom-control-label" for="id-user-5"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Label -->
+                                        <label class="stretched-label" for="id-user-5"></label>
+                                    </div>
+                                    <!-- Friend -->
+
+                                    <div class="mb-6">
+                                        <small class="text-uppercase">W</small>
+                                    </div>
+
+                                    <!-- Friend -->
+                                    <div class="card mb-6">
+                                        <div class="card-body">
+
+                                            <div class="media">
+                                                
+                                                
+                                                <div class="avatar mr-5">
+                                                    <img class="avatar-img" src="/asset/images/avatars/9.jpg" alt="William Wright">
+                                                </div>
+                                                
+
+                                                <div class="media-body align-self-center mr-6">
+                                                    <h6 class="mb-0">William Wright</h6>
+                                                    <small class="text-muted">last seen 3 days ago</small>
+                                                </div>
+
+                                                <div class="align-self-center ml-auto">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" id="id-user-6" type="checkbox">
+                                                        <label class="custom-control-label" for="id-user-6"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Label -->
+                                        <label class="stretched-label" for="id-user-6"></label>
+                                    </div>
+                                    <!-- Friend --><!-- Friend -->
+                                    <div class="card mb-6">
+                                        <div class="card-body">
+
+                                            <div class="media">
+                                                
+                                                
+                                                <div class="avatar mr-5">
+                                                    <img class="avatar-img" src="/asset/images/avatars/3.jpg" alt="William Greer">
+                                                </div>
+                                                
+
+                                                <div class="media-body align-self-center mr-6">
+                                                    <h6 class="mb-0">William Greer</h6>
+                                                    <small class="text-muted">last seen 10 minutes ago</small>
+                                                </div>
+
+                                                <div class="align-self-center ml-auto">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" id="id-user-7" type="checkbox">
+                                                        <label class="custom-control-label" for="id-user-7"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Label -->
+                                        <label class="stretched-label" for="id-user-7"></label>
+                                    </div>
+                                    <!-- Friend -->
+
+                                    <div class="mb-6">
+                                        <small class="text-uppercase">Z</small>
+                                    </div>
+
+                                    <!-- Friend -->
+                                    <div class="card mb-6">
+                                        <div class="card-body">
+
+                                            <div class="media">
+                                                
+                                                
+                                                <div class="avatar mr-5">
+                                                    <img class="avatar-img" src="/asset/images/avatars/7.jpg" alt="Zane Mayes">
+                                                </div>
+                                                
+
+                                                <div class="media-body align-self-center mr-6">
+                                                    <h6 class="mb-0">Zane Mayes</h6>
+                                                    <small class="text-muted">last seen 3 days ago</small>
+                                                </div>
+
+                                                <div class="align-self-center ml-auto">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input class="custom-control-input" id="id-user-8" type="checkbox">
+                                                        <label class="custom-control-label" for="id-user-8"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Label -->
+                                        <label class="stretched-label" for="id-user-8"></label>
+                                    </div>
+                                    <!-- Friend -->
+
+                                </nav>
+                            </div>
+                            <!-- Chat Members -->
+
+                        </div>
+                        <!-- Create chat -->
+
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="pb-6">
+                    <div class="container-fluid">
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Create group</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tab-pane fade h-100" id="tab-content-friends" role="tabpanel">
+            <div class="d-flex flex-column h-100">
+
+                <div class="hide-scrollbar">
+                    <div class="container-fluid py-6">
+
+                        <!-- Title -->
+                        <h2 class="font-bold mb-6">Friends</h2>
+                        <!-- Title -->
+
+                        <!-- Search -->
+                        <%- include('./search.ejs'); -%>
+                        <!-- Search -->
+
+                        <!-- Button -->
+                        <button type="button" class="btn btn-lg btn-block btn-secondary d-flex align-items-center mb-6" data-toggle="modal" data-target="#invite-friends">
+                            Invite friends
+                            <i class="fe-users ml-auto"></i>
+                        </button>
+
+                        <!-- Friends -->
+                        <nav class="mb-n6">
+
+                            <div class="mb-6">
+                                <small class="text-uppercase">A</small>
+                            </div>
+
+                            <!-- Friend -->
+                            <div class="card mb-6">
+                                <div class="card-body">
+
+                                    <div class="media">
+                                        
+                                        <div class="avatar avatar-online mr-5">
+                                            <img class="avatar-img" src="/asset/images/avatars/10.jpg" alt="Anna Bridges">
+                                        </div>
+                                        
+                                        
+                                        <div class="media-body align-self-center">
+                                            <h6 class="mb-0">Anna Bridges</h6>
+                                            <small class="text-muted">Online</small>
+                                        </div>
+
+                                        <div class="align-self-center ml-5">
+                                            <div class="dropdown z-index-max">
+                                                <a href="#" class="btn btn-sm btn-ico btn-link text-muted w-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fe-more-vertical"></i>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        New chat <span class="ml-auto fe-edit-2"></span>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        Delete <span class="ml-auto fe-trash-2"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Link -->
+                                    <a href="chat-2.html" class="stretched-link"></a>
+
+                                </div>
+                            </div>
+                            <!-- Friend -->
+
+                            <div class="mb-6">
+                                <small class="text-uppercase">B</small>
+                            </div>
+
+                            <!-- Friend -->
+                            <div class="card mb-6">
+                                <div class="card-body">
+
+                                    <div class="media">
+                                        
+                                        
+                                        <div class="avatar mr-5">
+                                            <img class="avatar-img" src="/asset/images/avatars/6.jpg" alt="Brian Dawson">
+                                        </div>
+                                        
+                                        <div class="media-body align-self-center">
+                                            <h6 class="mb-0">Brian Dawson</h6>
+                                            <small class="text-muted">last seen 2 hours ago</small>
+                                        </div>
+
+                                        <div class="align-self-center ml-5">
+                                            <div class="dropdown z-index-max">
+                                                <a href="#" class="btn btn-sm btn-ico btn-link text-muted w-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fe-more-vertical"></i>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        New chat <span class="ml-auto fe-edit-2"></span>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        Delete <span class="ml-auto fe-trash-2"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Link -->
+                                    <a href="#" class="stretched-link"></a>
+
+                                </div>
+                            </div>
+                            <!-- Friend -->
+
+                            <div class="mb-6">
+                                <small class="text-uppercase">L</small>
+                            </div>
+
+                            <!-- Friend -->
+                            <div class="card mb-6">
+                                <div class="card-body">
+
+                                    <div class="media">
+                                        
+                                        
+                                        <div class="avatar mr-5">
+                                            <img class="avatar-img" src="/asset/images/avatars/5.jpg" alt="Leslie Sutton">
+                                        </div>
+                                        
+                                        <div class="media-body align-self-center">
+                                            <h6 class="mb-0">Leslie Sutton</h6>
+                                            <small class="text-muted">last seen 3 days ago</small>
+                                        </div>
+
+                                        <div class="align-self-center ml-5">
+                                            <div class="dropdown z-index-max">
+                                                <a href="#" class="btn btn-sm btn-ico btn-link text-muted w-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fe-more-vertical"></i>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        New chat <span class="ml-auto fe-edit-2"></span>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        Delete <span class="ml-auto fe-trash-2"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Link -->
+                                    <a href="#" class="stretched-link"></a>
+
+                                </div>
+                            </div>
+                            <!-- Friend -->
+
+                            <div class="mb-6">
+                                <small class="text-uppercase">M</small>
+                            </div>
+
+                            <!-- Friend -->
+                            <div class="card mb-6">
+                                <div class="card-body">
+
+                                    <div class="media">
+                                        
+                                        
+                                        <div class="avatar mr-5">
+                                            <img class="avatar-img" src="/asset/images/avatars/4.jpg" alt="Matthew Wiggins">
+                                        </div>
+                                        
+                                        <div class="media-body align-self-center">
+                                            <h6 class="mb-0">Matthew Wiggins</h6>
+                                            <small class="text-muted">last seen 3 days ago</small>
+                                        </div>
+
+                                        <div class="align-self-center ml-5">
+                                            <div class="dropdown z-index-max">
+                                                <a href="#" class="btn btn-sm btn-ico btn-link text-muted w-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fe-more-vertical"></i>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        New chat <span class="ml-auto fe-edit-2"></span>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        Delete <span class="ml-auto fe-trash-2"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Link -->
+                                    <a href="#" class="stretched-link"></a>
+
+                                </div>
+                            </div>
+                            <!-- Friend -->
+
+                            <div class="mb-6">
+                                <small class="text-uppercase">S</small>
+                            </div>
+
+                            <!-- Friend -->
+                            <div class="card mb-6">
+                                <div class="card-body">
+
+                                    <div class="media">
+                                        
+                                        
+                                        <div class="avatar mr-5">
+                                            <img class="avatar-img" src="/asset/images/avatars/7.jpg" alt="Simon Hensley">
+                                        </div>
+                                        
+                                        <div class="media-body align-self-center">
+                                            <h6 class="mb-0">Simon Hensley</h6>
+                                            <small class="text-muted">last seen 3 days ago</small>
+                                        </div>
+
+                                        <div class="align-self-center ml-5">
+                                            <div class="dropdown z-index-max">
+                                                <a href="#" class="btn btn-sm btn-ico btn-link text-muted w-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fe-more-vertical"></i>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        New chat <span class="ml-auto fe-edit-2"></span>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        Delete <span class="ml-auto fe-trash-2"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Link -->
+                                    <a href="#" class="stretched-link"></a>
+
+                                </div>
+                            </div>
+                            <!-- Friend -->
+
+                            <div class="mb-6">
+                                <small class="text-uppercase">W</small>
+                            </div>
+
+                            <!-- Friend -->
+                            <div class="card mb-6">
+                                <div class="card-body">
+
+                                    <div class="media">
+                                        
+                                        
+                                        <div class="avatar mr-5">
+                                            <img class="avatar-img" src="/asset/images/avatars/9.jpg" alt="William Wright">
+                                        </div>
+                                        
+                                        <div class="media-body align-self-center">
+                                            <h6 class="mb-0">William Wright</h6>
+                                            <small class="text-muted">last seen 3 days ago</small>
+                                        </div>
+
+                                        <div class="align-self-center ml-5">
+                                            <div class="dropdown z-index-max">
+                                                <a href="#" class="btn btn-sm btn-ico btn-link text-muted w-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fe-more-vertical"></i>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        New chat <span class="ml-auto fe-edit-2"></span>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        Delete <span class="ml-auto fe-trash-2"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Link -->
+                                    <a href="#" class="stretched-link"></a>
+
+                                </div>
+                            </div>
+                            <!-- Friend --><!-- Friend -->
+                            <div class="card mb-6">
+                                <div class="card-body">
+
+                                    <div class="media">
+                                        
+                                        
+                                        <div class="avatar mr-5">
+                                            <img class="avatar-img" src="/asset/images/avatars/3.jpg" alt="William Greer">
+                                        </div>
+                                        
+                                        <div class="media-body align-self-center">
+                                            <h6 class="mb-0">William Greer</h6>
+                                            <small class="text-muted">last seen 10 minutes ago</small>
+                                        </div>
+
+                                        <div class="align-self-center ml-5">
+                                            <div class="dropdown z-index-max">
+                                                <a href="#" class="btn btn-sm btn-ico btn-link text-muted w-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fe-more-vertical"></i>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        New chat <span class="ml-auto fe-edit-2"></span>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        Delete <span class="ml-auto fe-trash-2"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Link -->
+                                    <a href="#" class="stretched-link"></a>
+
+                                </div>
+                            </div>
+                            <!-- Friend -->
+
+                            <div class="mb-6">
+                                <small class="text-uppercase">Z</small>
+                            </div>
+
+                            <!-- Friend -->
+                            <div class="card mb-6">
+                                <div class="card-body">
+
+                                    <div class="media">
+                                        
+                                        
+                                        <div class="avatar mr-5">
+                                            <img class="avatar-img" src="/asset/images/avatars/7.jpg" alt="Zane Mayes">
+                                        </div>
+                                        
+                                        <div class="media-body align-self-center">
+                                            <h6 class="mb-0">Zane Mayes</h6>
+                                            <small class="text-muted">last seen 3 days ago</small>
+                                        </div>
+
+                                        <div class="align-self-center ml-5">
+                                            <div class="dropdown z-index-max">
+                                                <a href="#" class="btn btn-sm btn-ico btn-link text-muted w-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fe-more-vertical"></i>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        New chat <span class="ml-auto fe-edit-2"></span>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                                        Delete <span class="ml-auto fe-trash-2"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Link -->
+                                    <a href="#" class="stretched-link"></a>
+
+                                </div>
+                            </div>
+                            <!-- Friend -->
+
+                        </nav>
+                        <!-- Friends -->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tab-pane fade h-100 show active" id="tab-content-dialogs" role="tabpanel">
+            <div class="d-flex flex-column h-100">
+
+                <div class="hide-scrollbar">
+                    <div class="container-fluid py-6">
+
+                        <!-- Title -->
+                        <h2 class="font-bold mb-6">Chats</h2>
+                        <!-- Title -->
+
+                        <!-- Search -->
+                        <%- include('./search.ejs'); -%>
+                        <!-- Search -->
+
+                        <!-- Favourites -->
+                        <div class="text-center hide-scrollbar d-flex my-7" data-horizontal-scroll="">
+                            <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                                <div class="avatar avatar-sm avatar-online mb-3">
+                                    <img class="avatar-img" src="/asset/images/avatars/2.jpg" alt="Image Description">
+                                </div>
+                                <div class="small">William</div>
+                            </a>
+
+                            <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                                <div class="avatar avatar-sm avatar-online mb-3">
+                                    <img class="avatar-img" src="/asset/images/avatars/3.jpg" alt="Image Description">
+                                </div>
+                                <div class="small">Simon</div>
+                            </a>
+
+                            <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                                <div class="avatar avatar-sm avatar-online mb-3">
+                                    <img class="avatar-img" src="/asset/images/avatars/4.jpg" alt="Image Description">
+                                </div>
+                                <div class="small">Thomas</div>
+                            </a>
+
+                            <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                                <div class="avatar avatar-sm avatar-online mb-3">
+                                    <img class="avatar-img" src="/asset/images/avatars/5.jpg" alt="Image Description">
+                                </div>
+                                <div class="small">Zane</div>
+                            </a>
+
+                            <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                                <div class="avatar avatar-sm mb-3">
+                                    <img class="avatar-img" src="/asset/images/avatars/6.jpg" alt="Image Description">
+                                </div>
+                                <div class="small">Thomas</div>
+                            </a>
+
+                            <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                                <div class="avatar avatar-sm mb-3">
+                                    <img class="avatar-img" src="/asset/images/avatars/7.jpg" alt="Image Description">
+                                </div>
+                                <div class="small">William</div>
+                            </a>
+
+                            <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                                <div class="avatar avatar-sm mb-3">
+                                    <img class="avatar-img" src="/asset/images/avatars/8.jpg" alt="Image Description">
+                                </div>
+                                <div class="small">Simon</div>
+                            </a>
+
+                            <a href="#" class="d-block text-reset mr-7 mr-lg-6">
+                                <div class="avatar avatar-sm mb-3">
+                                    <img class="avatar-img" src="/asset/images/avatars/9.jpg" alt="Image Description">
+                                </div>
+                                <div class="small">Thomas</div>
+                            </a>
+                        </div>
+                        <!-- Favourites -->
+
+                        <!-- Chats -->
+                        <%- include('./threads.ejs') -%>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tab-pane fade h-100" id="tab-content-demos" role="tabpanel">
+            <div class="d-flex flex-column h-100">
+
+                <div class="hide-scrollbar">
+                    <div class="container-fluid py-6">
+
+                        <!-- Title -->
+                        <h2 class="font-bold mb-6">Demos</h2>
+                        <!-- Title -->
+
+                        <!-- Search -->
+                        <%- include('./search.ejs'); -%>
+                        <!-- Search -->
+
+                        <!-- Card -->
+                        <div class="card mb-6">
+                            <div class="card-body">
+                                <div class="media align-items-center">
+                                    <div class="mr-5">
+                                        <img src="/asset/images/brand.svg" class="fill-primary" data-inject-svg="" alt="" style="height: 46px; width: 46px;">
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="mb-0">
+                                            <a href="documentation/index.html" class="text-basic-inverse stretched-link">Documentation</a>
+                                        </h5>
+                                        <p>Quick setup and build tools.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Card -->
+
+                        <!--<h5 class="my-6">Chat Pages:</h5>-->
+
+                        <!-- Card -->
+                        <!--<div class="card mb-6">
+                            <img class="card-img-top" alt="" src="/asset/images/demos/chat.jpg">
+                            <div class="card-body border-top">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="mb-0">Light mode</h5>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <a href="demo-light/" class="text-muted stretched-link">
+                                            <i class="fe-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                        <!-- Card -->
+
+                        <!-- Card -->
+                        <!--<div class="card mb-6">
+                            <img class="card-img-top" alt="" src="/asset/images/demos/chat-dark.jpg">
+                            <div class="card-body border-top">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="mb-0">Dark mode</h5>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <a href="demo-dark/" class="text-muted stretched-link">
+                                            <i class="fe-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                        <!-- Card -->
+
+                        <h5 class="my-6">Account Pages:</h5>
+
+                        <!-- Card -->
+                        <div class="card mb-6">
+                            <img class="card-img-top" alt="" src="/asset/images/demos/password-reset-dark.jpg">
+                            <div class="card-body border-top">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="mb-0">Password Reset</h5>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <a href="password-change" class="text-muted stretched-link">
+                                            <i class="fe-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade h-100" id="tab-content-user" role="tabpanel">
+            <div class="d-flex flex-column h-100">
+
+                <div class="hide-scrollbar">
+                    <div class="container-fluid py-6">
+
+                        <!-- Title -->
+                        <h2 class="font-bold mb-6">Profile</h2>
+                        <!-- Title -->
+
+                        <!-- Search -->
+                        <%- include('./search.ejs'); -%>
+                        <!-- Search -->
+
+                        <!-- Card -->
+                        <div class="card mb-6">
+                            <div class="card-body">
+                                <div class="text-center py-6">
+                                    <!-- Photo -->
+                                    <div class="avatar avatar-xl mb-5">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="avatar-img bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path>
+                                        </svg>
+                                    </div>
+
+                                    <h5><%- `${firstname} ${lastname}` %></h5>
+                                    <p class="text-muted">Bootstrap is an open source toolkit for developing web with HTML.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+
+                        <!-- Card -->
+                        <div class="card mb-6">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0 py-6">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <p class="small text-muted mb-0">Country</p>
+                                                <p>Nigeria</p>
+                                            </div>
+                                            <i class="text-muted icon-sm fe-globe"></i>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item px-0 py-6">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <p class="small text-muted mb-0">Phone</p>
+                                                <p>+39 02 87 21 43 19</p>
+                                            </div>
+                                            <i class="text-muted icon-sm fe-mic"></i>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item px-0 py-6">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <p class="small text-muted mb-0">Email</p>
+                                                <p><%- email %></p>
+                                            </div>
+                                            <i class="text-muted icon-sm fe-mail"></i>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item px-0 py-6">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <p class="small text-muted mb-0">Time</p>
+                                                <% today = new Date() %>
+                                                <p><%= `${today.getHours()}:${today.getMinutes()}` %></p>
+                                            </div>
+                                            <i class="text-muted icon-sm fe-clock"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Card -->
+
+                        <!-- Card -->
+                        <div class="card mb-6">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0 py-6">
+                                        <a href="#" class="media text-muted">
+                                            <div class="media-body align-self-center">
+                                                Twitter
+                                            </div>
+                                            <i class="icon-sm fe-twitter"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item px-0 py-6">
+                                        <a href="#" class="media text-muted">
+                                            <div class="media-body align-self-center">
+                                            Facebook
+                                            </div>
+                                            <i class="icon-sm fe-facebook"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item px-0 py-6">
+                                        <a href="#" class="media text-muted">
+                                            <div class="media-body align-self-center">
+                                                Github
+                                            </div>
+                                            <i class="icon-sm fe-github"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Card -->
+
+                        <div class="form-row">
+                            <div class="col">
+                                <!-- Button -->
+                                <button type="button" onclick="window.location.href='/settings'" class="btn btn-lg btn-block btn-basic d-flex align-items-center">
+                                    Settings
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-sliders" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="col">
+                                <!-- Button -->
+                                <button type="button" class="btn btn-lg btn-block btn-basic d-flex align-items-center">
+                                    Logout
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-bar-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Sidebar -->
+
+<script src="/js/extensive.js"></script>
