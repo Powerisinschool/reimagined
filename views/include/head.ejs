@@ -97,6 +97,7 @@
     </script>
     <script src="/js/lazysizes.min.js" async></script>
     <script>
+        var $loadProgress = $('#loadprogress');
         function goTo(page, title, url) {
             if ("undefined" !== typeof history.pushState) {
                 history.pushState({page: page}, title, url);
@@ -125,6 +126,10 @@
                     $a.addEventListener('click', (event) => {
                         event.preventDefault;
                         goTo("Login", $href, $href);
+                        $loadProgress.removeClass('d-none')
+                            .addClass('d-block');
+                        $loadProgress.style.width = "50%";
+                        console.log(`${$href} wa clicked`)
                     })
                     $a.removeAttribute("href");
                 }
