@@ -126,8 +126,8 @@
                     $a.addEventListener('click', (event) => {
                         event.preventDefault;
                         goTo("Login", $href, $href);
-                        $loadProgress.removeClass('d-none')
-                            .addClass('d-block');
+                        $loadProgress.classList.remove('d-none');
+                        $loadProgress.classList.add('d-block');
                         $loadProgress.style.width = "50%";
                         console.log(`${$href} was clicked`)
                     })
