@@ -136,7 +136,7 @@ define("./service-worker.js", ["./service-worker-idb-keyval-df4fb325", "./servic
       , c = {
         cacheKeyWillBeUsed: async({request: e})=>{
             const t = new URL(e.url);
-            if (t.pathname.endservice-workerith("/index.html")) {
+            if (t.pathname.endsWith("/index.html")) {
                 return t.pathname.substr(0, t.pathname.length - "index.html".length) + t.search
             }
             return e

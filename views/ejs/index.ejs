@@ -6,7 +6,7 @@
     <!-- Navbar -->
     <div class="visible">
       <nav class="navbar navbar-light bg-white w-100">
-        <div id="loadcontainer" class="container-fluid progress w-100 d-none" style="height: 1px;">
+        <div id="loadcontainer" class="progress w-100 d-none" style="height: 1px;">
           <div id="loadprogress" class="progress-bar bg-primary" style="width: 0%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <div class="container-fluid">
@@ -401,7 +401,6 @@
                       event.preventDefault;
                       goTo("Login", $href, $href);
                       $loadContainer.classList.remove('d-none');
-                      $loadContainer.classList.add('d-block');
                       $loadProgress.style.width = "50%";
                       console.log(`${$href} was clicked`);
                       $(document).load($href, () => {
