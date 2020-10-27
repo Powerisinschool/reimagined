@@ -408,8 +408,12 @@
                         xhr.onload = function () {
                           document.open('text/html');
                           document.write(this.response);
-                          document.close();
+                          $loadProgress.style.width = "75%";
                           console.log('Loaded document');
+                          setTimeout( async () => {
+                            $loadContainer.classList.add('d-none');
+                          }, 2000);
+                          document.close();
                         };
                         xhr.open('GET', $href, true);
                         xhr.send();
