@@ -1,2 +1,5 @@
 # reimagined
-This is just some fun to see how far I can go with Pagespeed
+This is just a fun project to see how far I can go with Pagespeed
+
+# Usage:
+To check out the site, visit: https://uploadol.herokuapp.com
