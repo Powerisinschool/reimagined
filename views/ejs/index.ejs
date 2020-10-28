@@ -425,7 +425,7 @@
               window.setTimeout(backgroundListener, 200);
           }
       })
-      window.onpopstate = function(event) {
+      window.addEventListener('popstate', function(event) {
         /*var xhr = new XMLHttpRequest();
         xhr.onload = function () {
           document.open('text/html');
@@ -440,7 +440,7 @@
         xhr.open('GET', $href, true);
         xhr.send();*/
         alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
-      };
+      });
       history.back();
     </script>
   </body>
