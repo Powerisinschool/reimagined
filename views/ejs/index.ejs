@@ -427,6 +427,17 @@
       })
       window.addEventListener('popstate', function(event) {
         event.preventDefault;
+        var r = confirm("You pressed a Back button! Are you sure you want to goback?!");
+        if (r == true) {
+            // Call Back button programmatically as per user confirmation.
+            history.back();
+            // Uncomment below line to redirect to the previous page instead.
+            // window.location = document.referrer // Note: IE11 is not supporting this.
+        } else {
+            // Stay on the current page.
+            history.pushState(null, null, window.location.pathname);
+        }
+        history.pushState(null, null, window.location.pathname);
         /*var xhr = new XMLHttpRequest();
         xhr.onload = function () {
           document.open('text/html');
@@ -441,8 +452,7 @@
         xhr.open('GET', $href, true);
         xhr.send();*/
         alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
-      });
-      //history.back();
+      }, false);
     </script>
   </body>
 </html>
