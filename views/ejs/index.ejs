@@ -421,11 +421,26 @@
                   })
                   $a.removeAttribute("href");
               }
-              
               ++$index;
               window.setTimeout(backgroundListener, 200);
           }
       })
+      window.onpopstate = function(event) {
+        /*var xhr = new XMLHttpRequest();
+        xhr.onload = function () {
+          document.open('text/html');
+          document.write(this.response);
+          $loadProgress.style.width = "75%";
+          console.log('Loaded document');
+          setTimeout( async () => {
+            $loadContainer.classList.add('d-none');
+          }, 2000);
+          document.close();
+        };
+        xhr.open('GET', $href, true);
+        xhr.send();*/
+        alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
+      };
     </script>
   </body>
 </html>
