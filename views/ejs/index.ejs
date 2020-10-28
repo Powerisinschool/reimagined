@@ -435,9 +435,9 @@
             // window.location = document.referrer // Note: IE11 is not supporting this.
         } else {
             // Stay on the current page.
-            history.pushState(null, null, window.location.pathname);
+            goTo(null, null, window.location.pathname);
         }
-        history.pushState(null, null, window.location.pathname);
+        goTo(null, null, window.location.pathname);
         /*var xhr = new XMLHttpRequest();
         xhr.onload = function () {
           document.open('text/html');
